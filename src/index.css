@@ -2,3 +2,8 @@
         display: flex;
         justify-content: space-between;
     }
+
+body {
+	color: #181F2C;
+	font-family: 'Graphik', 'Roboto', Arial, Helvetica, sans-serif;
+}
