@@ -2,28 +2,17 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import DroppableList from '../DroppableList/DroppableList';
-import {reorder, move} from './utils';
-
+import { reorder, move } from './utils';
+import { USERS } from '../../data/data';
 
 const WORKING = 'WORKING';
 const MEETING = 'MEETING'
 
-// fake data generator
-const getItems = (count, offset = 0) =>
-    Array.from({ length: count }, (v, k) => k).map(k => ({
-        id: `item-${k + offset}`,
-        content: `item ${k + offset}`,
-        name: 'Frodo',
-        role: 'Hobbit',
-        hourCost: 10
-    }));
-
-
 
 class MainContainer extends Component {
     state = {
-        workingUsers: getItems(10),
-        inMeetingUsers: getItems(5, 10)
+        workingUsers: USERS.map((x, i) => {x.id = `item-${i + 1}`; return x}),
+        inMeetingUsers: []
     };
     id2List = {
         WORKING: 'workingUsers',

@@ -50,7 +50,7 @@ class DroppableList extends Component {
                                                 snapshot.isDragging,
                                                 provided.draggableProps.style
                                             )}>
-                                            <UserCard name={item.name} description={item.description} role={item.role} img_url={item.img_url}></UserCard>
+                                            <UserCard name={item.name} description={item.description} role={item.role.name} img_url={item.img_url}></UserCard>
                                         </div>
                                     )}
                                 </Draggable>
