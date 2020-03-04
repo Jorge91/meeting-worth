@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, ButtonGroup, Button, Container, Grid, Typography } from '@material-ui/core';
+import { ButtonGroup, Button, Grid, Typography } from '@material-ui/core';
 import { TITLE } from '../../data/data';
 
 
@@ -51,8 +51,6 @@ class Counter extends Component {
       }
 
     render () {
-        const { hourCost } = this.props;
-
         return (
 
             <Grid

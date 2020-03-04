@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import { DragDropContext } from 'react-beautiful-dnd';
 import DroppableList from '../DroppableList/DroppableList';
 import { reorder, move } from './utils';
 import { USERS } from '../../data/data';
