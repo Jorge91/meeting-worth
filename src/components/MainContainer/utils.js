@@ -19,3 +19,8 @@ export const move = (source, destination, droppableSource, droppableDestination)
 
     return result;
 };
+
+
+export const caculateHourlyCostFromUsers = (usersArray) => {
+    
+}

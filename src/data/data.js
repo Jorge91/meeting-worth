@@ -2,11 +2,12 @@ const ELECTRIC = 'ELECTRIC';
 const FIRE = 'FIRE';
 const WATER = 'WATER';
 
+export const TITLE = 'How much?';
 
 export const ROLES = {
-	[ELECTRIC]: {name: 'Electric', hourCost: 10},
-	[FIRE]: {name: 'Fire', hourCost: 15},
-	[WATER]: {name: 'Water', hourCost: 22},
+	[ELECTRIC]: {name: 'Electric', hourCost: 50},
+	[FIRE]: {name: 'Fire', hourCost: 55},
+	[WATER]: {name: 'Water', hourCost: 60},
 }
 
 export const USERS = [
